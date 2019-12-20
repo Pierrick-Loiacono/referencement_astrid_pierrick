@@ -1,0 +1,174 @@
+/* HEADER CSS navbar */
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+header h1{
+
+}
+
+nav{
+    text-align: center;
+    width: 100%;
+    background-color:#f2f2f2;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+}
+
+#menu {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#menu a {
+    text-decoration: none;
+    outline: none;
+    font-weight:bold;
+    color:black;
+
+}
+#menu a:visited {
+    text-decoration: none;
+    color:black;
+}
+#menu a:active {
+    background-color: blue;
+}
+
+/******* Menu déroulant ********/
+
+#menu ul {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    text-align:center;
+
+}
+#menu li {
+    list-style-type:none;
+    background-color:#f2f2f2;
+}
+#menu li a {
+    display:block;
+    color:black;
+    text-decoration:none;
+    padding:5px;
+}
+#menu a:hover {
+    color:#FFD700;
+}
+#menu li ul li {
+    display:none;
+}
+#menu li:hover ul li {
+    display:block;
+}
+#menu li:hover ul li {
+    float:none;
+}
+#menu li ul {
+    position:absolute;
+}
+/**********************************/
+
+/* BODY */
+body{
+    margin: 0;
+}
+
+/* CSS Tableau */
+table{
+    margin:auto;
+    border: 1px solid #ddd;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+th{
+    background-color: #4770FF;
+    color: white;
+}
+th,td{
+    padding: 15px;
+}
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+tr{
+    transition: all 0.5s ease;
+}
+tr:hover{
+    background-color: grey;
+    transition: all 0.5s ease;
+}
+img {
+    width:150px;
+    height:100px;
+}
+
+/* Son */
+
+#son{
+
+}
+
+/*   Formulaire de contact  */
+
+.container {
+  max-width: 40%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
