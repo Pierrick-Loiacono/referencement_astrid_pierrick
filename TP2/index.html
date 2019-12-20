@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Voyagez</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
 
     <meta name="author" content="Pierrick Loiacono">
@@ -19,20 +20,44 @@
     </center>
         <nav>
             <div id="menu">
-                <a href="index.html">Accueil</a>
-                <li>
-                    <a href="menu.html">Menu</a>
-                    <ul>
-                        <li><a href="#">Connexion</a></li>
-                        <li><a href="#">Recherche</a></li>
-                        <li><a href="#">Réservation</a></li>
-                    </ul>
-                </li>
-                <a href="services.html">Services</a>
-                <a href="destinations.html">Destinations</a>
-                <a href="voyage_audio.html">Voyage virtuel audio</a>
-                <a href="voyage_video.html">Voyage virtuel vidéo</a>
-                <a href="contact.html">Contact</a>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Menu
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a id="connexionSite" class="dropdown-item" href="#">Connexion</a>
+                                    <a class="dropdown-item" href="#">Recherche</a>
+                                    <a class="dropdown-item" href="#">Réservation</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="destinations.html">Destination</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="voyage_audio.html">Voyage virtuel audio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="voyage_video.html">Voyage virtuel vidéo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </nav>
 
@@ -58,4 +83,7 @@
         </p>
     </section>
 </body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </html>
